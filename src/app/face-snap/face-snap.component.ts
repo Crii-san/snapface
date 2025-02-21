@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FaceSnap } from '../models/face-snap';
 
 @Component({
   selector: 'app-face-snap',
@@ -7,30 +8,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './face-snap.component.html',
   styleUrl: './face-snap.component.scss'
 })
-export class FaceSnapComponent implements OnInit {
-  public title!: string;
-  public description!: string;
-  public createdAt!: Date;
-  public snaps!: number;
-  public imageUrl!: string;
+export class FaceSnapComponent {
+  @Input() faceSnap!: FaceSnap;
 
   public clickState: boolean = false;
   public text: string = 'Oh Snap!';
 
-  ngOnInit() {
-    this.title = 'Beyoncé Renaissance World Tour';
-    this.description = 'The best concert of my life !';
-    this.createdAt = new Date();
-    this.snaps = 5;
-    this.imageUrl = 'https://pictures.laprovence.com/cdn-cgi/image/width=1080,format=auto,quality=80,trim.left=0,trim.top=79,trim.height=675,trim.width=1200/media/2023/05/27/20230526_RWT_Paris_Poole_MP1_3412_V1_TP.jpg'
-  }
-
   public onAddSnap() {
     if (this.clickState === false) {
-      this.snaps++;
+      this.faceSnap.addSnap();
       this.text = 'Oops, un Snap!';
     } else {
-      this.snaps--;
+      this.faceSnap.removeSnap();
       this.text = 'Oh Snap!';
     }
     this.clickState = !this.clickState;
