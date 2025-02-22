@@ -1,0 +1,60 @@
+:host {
+  display: flex;
+  padding: 1em;
+  padding-top: 5em;
+  flex-direction: column;
+}
+
+.face-snap-card {
+  width: auto;
+  max-width: 40em;
+  height: auto;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1em;
+  color: rgb(93, 93, 93);
+  box-shadow: 1px 1px 5px lightgrey;
+
+  h1, h2, h3 {
+    color: #111827;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 1%;
+  }
+}
+
+.snapped {
+  background-color: rgb(236, 251, 236);
+  color: green;
+
+  h1, h2, h3 {
+    color: green;
+  }
+}
+
+button {
+  appearance: none;
+  background-color: #111827;
+  border: 1px solid #111827;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+
+  a {
+    text-decoration: none;
+    color: #FAFBFC;
+  }
+}
+
+button:hover {
+  background-color: #304269;
+}
+
+.back {
+  margin-top: 1em;
+}
