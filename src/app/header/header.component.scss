@@ -1,0 +1,14 @@
+:host {
+  margin-bottom: 1em;
+}
+
+header {
+  display: flex;
+  background-color: #ffffff40;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+}

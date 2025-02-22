@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+h1, h2, h3 {
+  color: #111827;
+}
