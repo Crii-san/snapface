@@ -8,11 +8,15 @@
   width: auto;
   max-width: 40em;
   height: 25em;
-  background-color: rgb(238, 246, 255);
-  border-radius: 5%;
+  background-color: white;
+  border-radius: 30px;
   padding: 1em;
-  color: rgb(45, 45, 158);
-  box-shadow: 1px 1px 5px rgb(186, 218, 255);
+  color: rgb(93, 93, 93);
+  box-shadow: 1px 1px 5px lightgrey;
+
+  h1, h2, h3 {
+    color: #111827;
+  }
 
   img {
     width: 100%;
@@ -21,10 +25,10 @@
 
   button {
     appearance: none;
-    background-color: #FAFBFC;
-    border: 1px solid lightgray;
-    border-radius: 6px;
-    color: rgb(45, 45, 158);
+    background-color: #111827;
+    border: 1px solid #111827;
+    border-radius: 10px;
+    color: #FAFBFC;
     cursor: pointer;
     font-weight: 500;
     line-height: 20px;
@@ -33,10 +37,15 @@
   }
 
   button:hover {
-    background-color: #f1f0f0;
+    background-color: #304269;
   }
+}
 
-  .location {
-    color: #0f4ac19f;
+.snapped {
+  background-color: rgb(236, 251, 236);
+  color: green;
+
+  h1, h2, h3 {
+    color: green;
   }
 }
