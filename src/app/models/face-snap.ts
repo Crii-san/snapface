@@ -4,6 +4,7 @@ export class FaceSnap {
   public createdDate: Date;
   public snaps: number;
   public imageUrl: string;
+  public location?: string;
 
   constructor(title: string, description: string, createdDate: Date, snaps: number, imageUrl: string) {
     this.title = title;
@@ -19,6 +20,10 @@ export class FaceSnap {
 
   public removeSnap(): void {
     this.snaps--;
+  }
+
+  public setLocation(location: string) : void {
+    this.location = location;
   }
 }
 

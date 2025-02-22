@@ -7,5 +7,10 @@
     🤌 {{ faceSnap.snaps }}
   </p>
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+  @if (faceSnap.location) {
+    <p class="location">📍{{ faceSnap.location }} </p>
+  } @else {
+    <p class="location"> ❓Localisation inconnu </p>
+  }
 </div>
 

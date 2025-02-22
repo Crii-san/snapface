@@ -38,5 +38,7 @@ export class AppComponent implements OnInit {
       11,
       'https://www.mairie-ozoir-la-ferriere.fr/wp-content/uploads/2022/01/Piscine-25-scaled.jpg'
     );
+
+    this.parc.setLocation('Paris');
   }
 }

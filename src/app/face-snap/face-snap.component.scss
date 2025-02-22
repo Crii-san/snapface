@@ -1,13 +1,18 @@
+:host {
+  padding: 1em;
+}
+
 .face-snap-card {
-  width: 15em;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  width: auto;
+  max-width: 40em;
   height: 25em;
   background-color: rgb(238, 246, 255);
   border-radius: 5%;
   padding: 1em;
-  padding-top: 0.1em;
   color: rgb(45, 45, 158);
-  box-shadow: 1px 1px 5px rgb(128, 187, 255);
-  margin: 1em;
+  box-shadow: 1px 1px 5px rgb(186, 218, 255);
 
   img {
     width: 100%;
@@ -29,5 +34,9 @@
 
   button:hover {
     background-color: #f1f0f0;
+  }
+
+  .location {
+    color: #0f4ac19f;
   }
 }
