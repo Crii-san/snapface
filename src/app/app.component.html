@@ -1,7 +1,7 @@
 <div class="list-face-snap">
-  <app-face-snap [faceSnap]="concert"></app-face-snap>
-  <app-face-snap [faceSnap]="parc"></app-face-snap>
-  <app-face-snap [faceSnap]="piscine"></app-face-snap>
+  @for (faceSnap of faceSnaps; track faceSnap.title) {
+    <app-face-snap [faceSnap]="faceSnap"></app-face-snap>
+  }
 </div>
 
 
