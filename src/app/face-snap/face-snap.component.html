@@ -1,7 +1,7 @@
 <div class="face-snap-card" [ngClass]="{snapped: clickState}">
   <h2>{{ faceSnap.title | titlecase }}</h2>
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
-  <p>Mis en ligne le {{ faceSnap.createdDate }}</p>
+  <p>Mis en ligne le {{ faceSnap.createdDate | date : 'longDate' }}</p>
   <p>{{ faceSnap.description }}</p>
   <p>
     <button (click)="onAddSnap()">{{ text }}</button>
