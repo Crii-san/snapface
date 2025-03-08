@@ -1,8 +1,9 @@
 :host {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1em;
   padding-top: 5em;
-  flex-direction: column;
 }
 
 .face-snap-card {
@@ -44,6 +45,7 @@ button {
   line-height: 20px;
   list-style: none;
   padding: 6px 16px;
+  color: #FAFBFC;
 
   a {
     text-decoration: none;
