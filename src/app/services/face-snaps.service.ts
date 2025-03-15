@@ -1,3 +1,4 @@
+import { FormGroup } from '@angular/forms';
 import { SnapType } from '../models/snap-type.type';
 import { FaceSnap } from './../models/face-snap';
 import { Injectable } from '@angular/core';
@@ -46,4 +47,21 @@ export class FaceSnapsService {
     const foundFaceSnap = this.getFaceSnapsById(faceSnapId);
     foundFaceSnap.snap(snapType);
   }
+
+  public addFaceSnap(formValue: {title: string, description: string, imageUrl: string, location?: string}): void {
+    const faceSnap = new FaceSnap(
+      formValue.title,
+      formValue.description,
+      new Date(),
+      0, 
+      formValue.imageUrl
+    );
+
+    if (formValue.location) {
+      faceSnap.setLocation(formValue.location);
+    }
+
+    this.faceSnaps.push(faceSnap);
+}
+
 }

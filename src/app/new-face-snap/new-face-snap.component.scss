@@ -51,6 +51,12 @@ button:hover {
     background-color: #111827;
 }
 
+button:disabled {
+    background-color: white;
+    border: 1px solid grey;
+    color: grey;
+}
+
 .face-snap-card {
     img {
         width: 100%;
