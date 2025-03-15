@@ -1,0 +1,61 @@
+:host {
+    display: flex;
+    padding: 1em;
+    padding-top: 5em;
+    flex-direction: column;
+}
+
+.form-card, .face-snap-card {
+    width: 75%;
+    margin: 20px auto;
+    box-shadow: lightgray 4px 4px 20px;
+    border-radius: 30px;
+    padding: 1em;
+    color: #111827;
+    box-shadow: 1px 1px 5px lightgrey;
+}
+
+.form-group {
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input, textarea {
+    width: 70%;
+}
+
+.action-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-top: 1em;
+}
+
+button {
+    appearance: none;
+    background-color: #111827;
+    border: 1px solid #111827;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    color: #FAFBFC;
+}
+  
+button:hover {
+    background-color: #111827;
+}
+
+.face-snap-card {
+    img {
+        width: 100%;
+        border-radius: 1%;
+      }
+    h2 {margin-bottom: 0;}
+    p {font-weight: 300; font-size: 16px;}
+}
